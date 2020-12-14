@@ -9,6 +9,8 @@ router.post("/", (request, response) => {
     last: request.body.last,
     birth: request.body.birth,
     year: request.body.year,
+    gender: request.body.gender,
+    born: request.body.born,
   }).then(
     function success(person) {
       response.json({

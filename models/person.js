@@ -12,6 +12,13 @@ module.exports = function (sequelize, DateTypes) {
     year: {
       type: DateTypes.INTEGER,
     },
+    gender: {
+      type: DateTypes.STRING,
+    },
+    born: {
+      type: DateTypes.BOOLEAN,
+      defaultValue: true,
+    },
   });
   return Person;
   // console.log("*****SEQUELIZE*****", sequelize.define);
